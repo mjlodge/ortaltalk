@@ -31,7 +31,7 @@ def new_session():
     
 @ask.intent('OnIntent')
 def on_intent():
-    response = requests.get('http://' + localpi + '/on')
+    response = requests.get('http://' + localpi + ':8000/on')
     if response.status_code != 200:
         text = render_template('on_error')
     else:
@@ -40,9 +40,13 @@ def on_intent():
 
 @ask.intent('OffIntent')
 def off_intent():
-    response = requests.get('http://' + localpi + '/off')
+    response = requests.get('http://' + localpi + ':8000/off')
     if response.status_code != 200:
         text = render_template('off_error')
     else:
         text = render_template('off')
     return statement(text).simple_card('Off', text)
+
+if __name__ == '__main__':
+
+    app.run(debug=True)
