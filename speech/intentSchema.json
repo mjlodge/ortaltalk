@@ -8,6 +8,15 @@
     },
     {
       "intent": "StatusIntent"
+    },
+    {
+      "intent": "OneshotFire",
+      "slots": [
+        {
+          "name": "OnOff",
+          "type": "ON_OFF"
+        }
+      ]
     }
   ]
 }
