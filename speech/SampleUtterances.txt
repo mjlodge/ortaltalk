@@ -14,5 +14,5 @@ StatusIntent is the fire off
 StatusIntent what is the fire doing
 StatusIntent tell me about the fire
 StatusIntent what is the fire doing
-OneshotIntent turn the fire {State}
-OneshotIntent turn {State} the fire
+OneshotIntent turn the fire {OnOff}
+OneshotIntent turn {OnOff} the fire
