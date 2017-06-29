@@ -1,0 +1,9 @@
+welcome: Welcome to Ortal gas fire control. You can say things like turn fire on, turn fire off and what's the status?
+
+on: Fire on
+on_error: Sorry, I was unable to turn on the fire. Try again later.
+
+off: Fire off
+off_error: Sorry, I was unable to turn on the fire. Try again later.
+
+status: I think the fire is {{status}}
