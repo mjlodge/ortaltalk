@@ -10,7 +10,7 @@
       "intent": "StatusIntent"
     },
     {
-      "intent": "OneshotFire",
+      "intent": "OneshotIntent",
       "slots": [
         {
           "name": "OnOff",
