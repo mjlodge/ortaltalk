@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "intent": "OnIntent"
+    },
+    {
+      "intent": "OffIntent"
+    },
+    {
+      "intent": "StatusIntent"
+    }
+  ]
+}
