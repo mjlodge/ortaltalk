@@ -1,0 +1,16 @@
+OnIntent turn on fire
+OnIntent turn fire on
+OnIntent turn the fire on
+OnIntent light the fire
+OnIntent light fire
+OffIntent turn off fire
+OffIntent turn fire off
+OffIntent turn the fire off
+OffIntent extinguish the fire
+OffIntent extinguish fire
+StatusIntent is the fire on
+StatusIntent what is the fire status
+StatusIntent is the fire off
+StatusIntent what is the fire doing
+StatusIntent tell me about the fire
+StatusIntent what is the fire doing
