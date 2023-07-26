@@ -12,9 +12,9 @@ Change this to the DNS name of ortalctl on your Pi
 
 try:
     rpi = socket.gethostbyname(localpi)
-    
+
 except Exception:
-    print('Unable to find ortalctl ' + localpi)
+    print(f'Unable to find ortalctl {localpi}')
     exit(1)
 
 app = Flask(__name__)
@@ -31,7 +31,7 @@ def new_session():
     
 @ask.intent('OnIntent')
 def on_intent():
-    response = requests.get('http://' + localpi + ':8000/on')
+    response = requests.get(f'http://{localpi}:8000/on')
     if response.status_code != 200:
         text = render_template('on_error')
     else:
@@ -40,7 +40,7 @@ def on_intent():
 
 @ask.intent('OffIntent')
 def off_intent():
-    response = requests.get('http://' + localpi + ':8000/off')
+    response = requests.get(f'http://{localpi}:8000/off')
     if response.status_code != 200:
         text = render_template('off_error')
     else:
